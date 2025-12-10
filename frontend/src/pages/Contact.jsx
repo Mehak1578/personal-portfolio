@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import axios from 'axios';
+import api from '../api';
 import './Contact.css';
 
 const Contact = () => {
@@ -29,7 +29,7 @@ const Contact = () => {
     setStatus({ loading: true, success: false, error: false, message: '' });
 
     try {
-      const response = await axios.post('http://localhost:5000/api/contact', formData);
+      const response = await api.post('/api/contact', formData);
       
       if (response.data.success) {
         setStatus({
