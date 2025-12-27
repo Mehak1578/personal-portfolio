@@ -2,11 +2,11 @@ import axios from 'axios';
 
 // Create axios instance with backend base URL
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'https://mehak-backend.onrender.com',
+  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000',
   headers: {
     'Content-Type': 'application/json',
   },
-  timeout: 10000, // 10 seconds timeout
+  timeout: 30000, // 30 seconds timeout
 });
 
 // Add request interceptor for debugging (optional)

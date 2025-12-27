@@ -1,9 +1,6 @@
-import { useState } from 'react';
 import './About.css';
 
 const About = () => {
-  const [imageLoaded, setImageLoaded] = useState(false);
-
   const skillCategories = [
     { category: 'Frontend', skills: ['React.js', 'Tailwind CSS'] },
     { category: 'Backend', skills: ['Node.js', 'Express.js'] },
@@ -21,25 +18,32 @@ const About = () => {
             <h1 className="hero-name">Mehak</h1>
             <h2 className="hero-title">Full Stack Developer | AI & Web Technologies Enthusiast</h2>
             <p className="hero-intro">
-              A highly motivated and detail-oriented BCA student passionate about building scalable web applications 
-              and AI-driven solutions. Skilled in building responsive UIs, secure backend systems, REST APIs, and 
-              working with databases.
+              BCA student passionate about building scalable web applications and AI-driven solutions. 
+              Skilled in full-stack development with modern technologies.
             </p>
-            <a href="/resume.pdf" download className="btn-download">
+            <a href="https://drive.google.com/file/d/1jeGnoYu0awcm_rruTNKHZEDVnHdMMxpv/view?usp=sharing" download className="btn-download">
               Download Resume
             </a>
           </div>
-          
-          <div className="hero-image-container">
-            <div className={`hero-image-wrapper ${imageLoaded ? 'loaded' : ''}`}>
-              <img 
-                src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?w=500&h=500&fit=crop"
-                alt="Mehak Profile"
-                className="hero-image"
-                onLoad={() => setImageLoaded(true)}
-              />
-            </div>
-          </div>
+        </div>
+      </div>
+
+      {/* Highlight Cards */}
+      <div className="highlights-section">
+        <div className="highlight-card">
+          <div className="highlight-icon">🎓</div>
+          <h3>BCA Student</h3>
+          <p>Pursuing Bachelor's in Computer Applications</p>
+        </div>
+        <div className="highlight-card">
+          <div className="highlight-icon">💻</div>
+          <h3>Full Stack Dev</h3>
+          <p>Building web apps with modern technologies</p>
+        </div>
+        <div className="highlight-card">
+          <div className="highlight-icon">🚀</div>
+          <h3>Quick Learner</h3>
+          <p>Passionate about exploring new tech</p>
         </div>
       </div>
 

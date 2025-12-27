@@ -4,19 +4,20 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Ask Gemini",
-      subtitle: "Full Stack AI Chat Application",
-      description: "Multi-session AI chat app with persistent message history and glassmorphic UI design.",
+      title: "World Countries Data",
+      subtitle: "Data-Driven Web Application",
+      description:
+        "A browser-based, interactive web application built using HTML, CSS, and pure JavaScript. It allows users to explore and analyze world country data through search, sorting, and visual representation.",
       features: [
-        "Multi-session AI chat with persistent message history",
-        "Glassmorphic UI with sidebar and responsive design",
-        "Integrated Gemini API with retry logic and error handling",
-        "Backend REST APIs for storing/sending chat history",
-        "Clean UX with smooth transitions"
+        "Real-time search by country name, capital, or language",
+        "Displays country details including flag, capital, languages, and population",
+        "Sorting functionality by name, capital, and population",
+        "Clean and responsive card-based user interface",
+        "Pure JavaScript DOM manipulation without external libraries"
       ],
-      techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "Gemini API"],
-      liveLink: "https://gemini-project-1.onrender.com",
-      githubLink: "https://github.com/Mehak1578/Gemini-project"
+      techStack: ["HTML", "CSS", "JavaScript", "DOM"],
+      liveLink: "https://web-countries-api-viewer.netlify.app/",
+      githubLink: "https://github.com/Mehak1578/World-Countries-Data-Explorer"
     },
     {
       id: 2,
@@ -31,7 +32,7 @@ const Projects = () => {
         "Fully responsive interface"
       ],
       techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
-      liveLink: "https://project-curelink-1.onrender.com",
+      liveLink: "https://project-curelink-1.onrender.com/",
       githubLink: "https://github.com/Mehak1578/Project-CureLink"
     }
   ];
