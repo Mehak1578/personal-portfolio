@@ -84,8 +84,7 @@ const Contact = () => {
         <div className="contact-info">
           <h1 className="contact-title">Get In Touch</h1>
           <p className="contact-description">
-            Have a question or want to work together? Feel free to reach out! 
-            I'd love to hear from you and discuss how we can collaborate on your next project.
+            Have a project in mind or want to connect? Feel free to reach out. I'd be happy to discuss ideas and opportunities.
           </p>
           
           <div className="contact-details">

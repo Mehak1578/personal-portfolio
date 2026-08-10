@@ -1,12 +1,34 @@
-import './About.css';
+import "./About.css";
 
 const About = () => {
   const skillCategories = [
-    { category: 'Frontend', skills: ['React.js', 'Tailwind CSS'] },
-    { category: 'Backend', skills: ['Node.js', 'Express.js'] },
-    { category: 'Database', skills: ['MongoDB', 'Mongoose'] },
-    { category: 'Tools', skills: ['Git', 'GitHub', 'Postman'] },
-    { category: 'Other Skills', skills: ['REST APIs', 'Authentication', 'Responsive Design'] }
+    {
+      category: "Frontend",
+      skills: [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "React.js",
+        "Next.js",
+        "Tailwind CSS",
+      ],
+    },
+    { category: "Backend", skills: ["Node.js", "Express.js", "REST APIs"] },
+    { category: "Database", skills: ["MongoDB", "Mongoose"] },
+    {
+      category: "Programming & DSA",
+      skills: ["Python", "Data Structures & Algorithms"],
+    },
+    { category: "Tools", skills: ["Git", "GitHub", "Postman", "VS Code"] },
+    {
+      category: "Other Skills",
+      skills: [
+        "Problem-Solving",
+        "Responsive Design",
+        "Communication",
+        "Teamwork",
+      ],
+    },
   ];
 
   return (
@@ -16,12 +38,20 @@ const About = () => {
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-name">Mehak</h1>
-            <h2 className="hero-title">Full Stack Developer | AI & Web Technologies Enthusiast</h2>
+            <h2 className="hero-title">
+              Full Stack Developer | Web Technologies Enthusiast
+            </h2>
             <p className="hero-intro">
-              BCA student passionate about building scalable web applications and AI-driven solutions. 
-              Skilled in full-stack development with modern technologies.
+              BCA student and aspiring Full Stack Developer with hands-on
+              experience building responsive web applications using modern web
+              technologies. Passionate about learning, problem-solving, and
+              creating real-world solutions.
             </p>
-            <a href="https://drive.google.com/file/d/1jeGnoYu0awcm_rruTNKHZEDVnHdMMxpv/view?usp=sharing" download className="btn-download">
+            <a
+              href="https://drive.google.com/file/d/1g8VTe61JfuEwmFKH-tJB_p_V2ZIucEAe/view?usp=sharing"
+              download
+              className="btn-download"
+            >
               Download Resume
             </a>
           </div>
@@ -52,15 +82,17 @@ const About = () => {
         <h2 className="skills-heading">Skills & Technologies</h2>
         <div className="skills-container">
           {skillCategories.map((item, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="skill-card"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <h3 className="skill-card-title">{item.category}</h3>
               <div className="skill-list">
                 {item.skills.map((skill, idx) => (
-                  <span key={idx} className="skill-item">{skill}</span>
+                  <span key={idx} className="skill-item">
+                    {skill}
+                  </span>
                 ))}
               </div>
             </div>
